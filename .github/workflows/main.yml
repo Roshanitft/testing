@@ -16,7 +16,10 @@ on:
         - qa
         - prod
         required: true
-  
+      
+env:
+      qa: ${{ github.event.inputs.YOUR_ENVIRONMENT }}
+      prod: ${{ github.event.inputs.YOUR_ENVIRONMENT }}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
