@@ -8,19 +8,8 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-    inputs:
-      YOUR_ENVIRONMENT:
-        type: choice
-        description: 'choose Environment' 
-        options: 
-        - qa
-        - prod
-        required: true
+    
       
-env:
-      qa: ${{ github.event.inputs.YOUR_ENVIRONMENT }}
-      prod: ${{ github.event.inputs.YOUR_ENVIRONMENT }}
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
